@@ -119,13 +119,19 @@ nav a:hover, nav a:focus-visible{background:#002244;outline:none}
     flex-direction:column;
     justify-content:space-between;
 }
-.product-card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 12px;
+.image-row {
+    display: flex;
+    justify-content: center; /* وسط چین کردن کل ردیف */
+    gap: 20px; /* فاصله بین عکس‌ها */
+}
+
+.image-row img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* گرد کردن کامل عکس */
+    object-fit: cover; /* حفظ تمرکز روی وسط عکس */
+    display: block; /* حذف فاصله پایین عکس */
+}
          }
 /* پاورقی */
 footer{
