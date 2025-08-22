@@ -136,7 +136,12 @@ footer{
     line-height:1.6;
     text-align:center;
 }
-
+footer {
+    min-height: 80px; /* یا هر ارتفاع دلخواه */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* FAB */
 .fab{
     position:fixed;
