@@ -135,13 +135,13 @@ nav a:hover, nav a:focus-visible{background:#002244;outline:none}
          }
 /* پاورقی */
 footer {
-    background: #003366;  /* رنگ هدر */
-    color: #fff;
+    background-color: #003366 !important;
+    color: #fff !important;
     padding: 20px 15px;
     font-size: 14px;
     line-height: 1.6;
     text-align: center;
-    min-height: 80px; /* ارتفاع ثابت */
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
