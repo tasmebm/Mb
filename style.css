@@ -119,7 +119,14 @@ nav a:hover, nav a:focus-visible{background:#002244;outline:none}
     flex-direction:column;
     justify-content:space-between;
 }
-
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+         }
 /* پاورقی */
 footer{
     background:#003366;
