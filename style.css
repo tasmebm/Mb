@@ -1,1 +1,132 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Vazirmatn',sans-serif;background:#f5f5f5;color:#222;line-height:1.6;font-size:16px;text-align:center}header{display:flex;justify-content:space-between;align-items:center;background:#003366;padding:10px 18px;color:#fff;position:relative}.logo img{height:60px;width:60px;object-fit:cover;border-radius:50%}.menu-btn{font-size:26px;cursor:pointer;background:none;border:none;color:#fff;padding:6px 10px;outline:none}nav{max-height:0;overflow:hidden;display:flex;flex-direction:column;background:#003366;position:absolute;top:60px;right:0;width:100%;z-index:10;transition:max-height .3s}nav.open{max-height:480px}nav a{padding:14px 10px;text-decoration:none;color:#fff;border-top:1px solid rgba(255,255,255,.2);font-size:16px;transition:background .3s}nav a:hover,nav a:focus-visible{background:#002244;outline:none}.fade-slider{position:relative;width:100%;height:250px;overflow:hidden;z-index:0}.fade-slider img{width:100%;height:100%;object-fit:cover;display:block}.section{padding:10px 15px;max-width:1100px;margin:270px auto 30px auto;text-align:center}.section h1,.section h2{color:#003366;margin-bottom:12px;font-weight:700}.products{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:flex-start}.product-card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.12);padding:18px;width:100%;max-width:320px;text-align:center;margin:0 auto;display:flex;flex-direction:column;justify-content:space-between}iframe{border:0;width:100%;height:250px;margin-top:15px}footer{background:#002244;color:#fff;padding:20px 15px;font-size:14px;line-height:1.6;text-align:center;min-height:70px;display:flex;align-items:center;justify-content:center}.fab{position:fixed;bottom:20px;left:20px;z-index:100;display:flex;flex-direction:column;align-items:center}.fab-button{background:#25d366;color:#fff;border:none;border-radius:50%;width:56px;height:56px;font-size:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 0 8px rgba(0,0,0,.4);transition:transform .2s;outline:none}.fab-button:hover,.fab-button:focus-visible{transform:scale(1.1)}.fab-icons{opacity:0;transform:translateY(12px);transition:all .3s ease;display:flex;flex-direction:column;gap:12px;margin-bottom:12px;align-items:center;pointer-events:none}.fab-icons.show{opacity:1;transform:translateY(0);pointer-events:auto}.fab-icons a{background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;width:50px;height:50px;box-shadow:0 0 5px #999;text-decoration:none}.fab-icons a i{font-size:22px!important;color:#003366!important}@media(max-width:900px){.fade-slider{height:200px}.section{margin:220px auto 20px auto}.logo img{height:50px;width:50px}}@media(max-width:600px){body{font-size:15px}.fade-slider{height:180px}.section{margin:200px auto 20px auto}.logo img{height:45px;width:45px}.products{flex-direction:column}.product-card{max-width:100%}nav a{font-size:15px;padding:14px 6px}.menu-btn{font-size:28px}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Vazirmatn',sans-serif;background:#f5f5f5;color:#222;line-height:1.6;font-size:16px;text-align:center}
+
+/* هدر */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#003366;
+  padding:8px 16px;
+  color:#fff;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  height:60px;
+}
+.logo img{
+  height:45px;
+  width:45px;
+  border-radius:50%;
+  object-fit:cover;
+}
+.menu-btn{
+  font-size:26px;
+  cursor:pointer;
+  background:none;
+  border:none;
+  color:#fff;
+  outline:none;
+}
+
+/* منو */
+nav{
+  max-height:0;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  background:#003366;
+  position:absolute;
+  top:60px;
+  right:0;
+  width:100%;
+  z-index:999;
+  transition:max-height .3s;
+}
+nav.open{max-height:480px}
+nav a{
+  padding:14px 10px;
+  text-decoration:none;
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,.2);
+  font-size:16px;
+}
+nav a:hover{background:#002244}
+
+/* بنر ثابت */
+.fade-slider{
+  margin-top:60px; /* فاصله از هدر */
+  width:100%;
+  height:280px;
+  overflow:hidden;
+}
+.fade-slider img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* محتوای صفحه */
+.section{
+  padding:20px 15px;
+  max-width:1100px;
+  margin:0 auto;
+  text-align:center;
+}
+.section h1,.section h2{color:#003366;margin-bottom:12px;font-weight:700}
+
+/* محصولات */
+.products{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.product-card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,.12);
+  padding:18px;
+  width:100%;
+  max-width:320px;
+}
+
+/* فوتر */
+footer{
+  background:#002244;
+  color:#fff;
+  padding:20px 15px;
+  font-size:14px;
+  text-align:center;
+}
+
+/* دکمه شناور */
+.fab{position:fixed;bottom:20px;left:20px;z-index:1100;display:flex;flex-direction:column;align-items:center}
+.fab-button{
+  background:#25d366;color:#fff;border:none;border-radius:50%;
+  width:56px;height:56px;font-size:28px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 8px rgba(0,0,0,.4);transition:transform .2s;
+}
+.fab-button:hover{transform:scale(1.1)}
+.fab-icons{
+  opacity:0;transform:translateY(12px);transition:all .3s ease;
+  display:flex;flex-direction:column;gap:12px;margin-bottom:12px;align-items:center;pointer-events:none
+}
+.fab-icons.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.fab-icons a{
+  background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  width:50px;height:50px;box-shadow:0 0 5px #999;text-decoration:none
+}
+.fab-icons a i{font-size:22px;color:#003366}
+
+/* ریسپانسیو */
+@media(max-width:900px){
+  .fade-slider{height:220px}
+  .logo img{height:40px;width:40px}
+}
+@media(max-width:600px){
+  body{font-size:15px}
+  .fade-slider{height:180px}
+  .logo img{height:38px;width:38px}
+  .products{flex-direction:column}
+  .product-card{max-width:100%}
+    }
