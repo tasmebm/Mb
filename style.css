@@ -135,17 +135,16 @@ nav a:hover, nav a:focus-visible{background:#002244;outline:none}
          }
 /* پاورقی */
 footer {
-    background: #003366;
-    color: #fff;
-    padding: 20px 15px;
-    font-size: 14px;
-    line-height: 1.6;
-    text-align: center;
-
-    min-height: 80px; /* یا هر ارتفاع دلخواه */
+    min-height: 80px; /* ارتفاع دلخواه */
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #003366;  /* رنگ پس‌زمینه */
+    color: #fff;          /* رنگ متن */
+    padding: 20px 15px;   /* فاصله داخلی */
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
 }
 /* FAB */
 .fab{
