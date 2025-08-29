@@ -1,4 +1,4 @@
-# robots.txt پیشرفته برای bmbelt.ir
+# robots.txt پیشرفته برای https://tasmebm.github.io/Mb
 # مسیرهای مدیریتی و خصوصی مسدود، صفحات اصلی و محصولات باز
 
 # بخش Cloudflare Managed Content
@@ -46,4 +46,4 @@ Allow: /css/
 Allow: /js/
 
 # نقشه سایت
-Sitemap: https://bmbelt.ir/sitemap.xml
+Sitemap: https://https://tasmebm.github.io/Mb/sitemap.xml
